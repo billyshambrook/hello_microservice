@@ -1,3 +1,8 @@
 #!/bin/bash
 
+set -e
+
 echo Running RESTARTING script.
+
+# Start service
+../venv/bin/gunicorn hello_microservice:app --bind localhost:$PORT --worker-class aiohttp.worker.GunicornWebWorker &
