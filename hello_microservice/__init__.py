@@ -2,7 +2,7 @@ from aiohttp import web
 
 
 def index(request):
-    return web.Response(text="Welcome home!")
+    return web.Response(text="Welcome home 2!")
 
 
 app = web.Application()
